@@ -149,13 +149,14 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media  (max-width: 768px) and (min-width: 499px) {
+  
   header{
     padding-left: 20px;
     padding-bottom: 47px;
   }
   #fig-rodape {
-    margin-top: 15vh;
+    margin-top: 22vh;
     margin-left: 5vh;
   }
   form{
@@ -178,22 +179,58 @@
   margin-left: 20%;
    }
   }
-@media screen and (max-width: 500px) {
-  #fig-rodape {    
-    margin-top: 50vh;
-  }  
-  form{    
-    margin-left: 16%;
-  }
-  form p {
-    margin-left: 22%;
-  }
-  form .btn-login {
-     margin-left: 25%;
+  
+
+  @media screen and (max-width: 500px) {
+    #menu button{
+      position: relative;
+      z-index:12;
+      color: #fff;
     }
-  #fig-rodape {
-    margin-top: 11vh;
- }
+    #menu img{
+      display: none;
+    }
+    #cxaMain #fundo-home #fundo-home01 {   
+      left: 20%;
+    }
+    #cxaMain #fundo-home #fundo-home02 { 
+       
+      margin: 18% 34% 0px 42%;
+    }
+    #cxaMain #bt-saiba-mais {      
+    margin-left: 40%;
+    }
+    form {
+      margin-left: 13%;
+    }
+    
+  }
+
+@media screen and (max-width: 420px) {
+  header{
+    margin-bottom: 70px;
+  }
+  form  {
+    margin-left: 10%;
+   }
+   #fig-rodape {    
+    margin-top: 10vh;
+    margin-left: 100px;
+  }
+  
+  form .btn-login {
+    margin-left: -15%;
+}
+form .btn-login {
+  width: 50%;
+  margin-left: 22%;
+}
+form p {
+  margin-left: 14%;
+}
+@media screen and (max-width: 320px) {
+ 
+}
 }
  
 

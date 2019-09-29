@@ -335,8 +335,14 @@
 }
   fundo-home #fundo-home01{     
     margin-left: -80px;
+    
   }
-
+  
+  #cxaArtticle{
+    margin-top: 1px;
+    margin-left: -7%;
+    
+}
   #cxaArtticle :nth-child(2).artc{
     margin-left: -78px;
     }
@@ -345,25 +351,73 @@
     #menu button{
       position: relative;
       z-index:12;
-      color: #fff;
     }
     #menu img{
       display: none;
     }
+    header #menu button {
+    color: #fff;
+    }
+    
     #cxaMain #fundo-home #fundo-home01 {   
-      left: 20%;
+      margin-left: -36%;
     }
     #cxaMain #fundo-home #fundo-home02 { 
        
-      margin: 18% 34% 0px 42%;
+      margin: 18% 34% 0px 21%;
     }
-    #cxaMain #bt-saiba-mais {      
-    margin-left: 40%;
+    #cxaMain #bt-saiba-mais {
+    margin-left: 32%;
     }
-    
-  } 
+    #cxaArtticle .artc .dv-img {
+      height: 75px;
+    }
+    #cxaArtticle .artc .dv-img  img {
+    margin-top: 9px;
+    }
+    #cxaArtticle .artc {
+      width: 32%;
+      min-width: 50px;
+      margin-left: 40px;
+    }
+
+    #cxaArtticle .artc p{
+    padding-bottom: 0px;
+    font-size: 12px;
+  }
+    #cxaArtticle .artc button{
+      padding: 5px 10px;
+      margin-bottom: 0px;
+  }
+
+    #cxaArtticle :nth-child(2).artc {
+    margin-left: -100px;
+    }
+    #cxaArtticle :nth-child(3).artc {
+      left: 237px;
+    }
+    #cxaArtticle :nth-child(2) .img-rodape {
+      margin-top: 48px;
+      margin-left: -149px;
+    }
+    #cxaArtticle :nth-child(2) .img-rodape  button{
+      font-size: 20px;
+    }
   
-  @media screen and (max-width: 320px) {
+  }   
+
+  @media screen and (max-width: 420px){
+#cxaArtticle :nth-child(2).artc {
+    margin-left:-120px;
+}
+#cxaArtticle {
+  margin-left: -10%;
+  overflow: hidden;
+}
+
+}
+
+@media screen and (max-width: 320px) {
   #cxaMain #fundo-home #fundo-home01 {
     top: 82px;
     left: 10%;
