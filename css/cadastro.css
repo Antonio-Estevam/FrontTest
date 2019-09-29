@@ -1,0 +1,219 @@
+* {
+    box-sizing: border-box;
+    
+  }
+  
+  html,
+  body {
+    height: 100vh;
+    overflow: hidden;
+  }
+  .main{
+    height: 100vh;
+
+  }
+  
+  body {
+    background-color:#fff;
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+  header {
+    padding-left:100px;
+    padding-top: 30px;
+    padding-bottom:0px; 
+    
+  } 
+  
+  form h1 {
+    font-size: 29px;
+    margin-top: 17px;
+    color: #585859;
+    text-align: left; 
+    font-family: 'Mukta', sans-serif;
+    font: 700;
+  }
+  
+  form {    
+    /*padding: 30px 25px;*/
+    display: flex;
+    flex-direction: column; 
+    margin: 0 auto;
+    margin-left: 25%;
+  }
+  form .unir-inpu{
+    display:flex;
+    flex-direction: row;
+    width: 93%;
+  }
+  form .unir-inpu .input-block:nth-child(2){
+    margin-left: 10px;
+  }
+  
+  form .cad-box {
+    display: flex;
+    flex-direction: row; 
+  }
+  .cad-box  h2{
+    font-size: 16px;
+    color: #585859;
+    margin-top: 20px;
+    font-family: 'Mukta', sans-serif;
+    font: 400;
+
+  }
+  form #pessoal {
+    width: 400px;
+    
+  }
+  form #endereco {
+    width: 400px;
+  }
+  
+  
+  
+  form .input-block input {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+    padding: 7px;
+    font-size: 14px;
+    color: rgb(228, 232, 240);
+    border-radius: 5px;
+    border: 1px solid #ccddef;
+    outline-color: #7159c1;
+    max-width: 373px;
+    font-family: 'Mukta', sans-serif;
+    font: 400;
+
+  } 
+  form .input-block input placeholder{
+    color: #d5d9df;
+  }
+
+  
+  form .input-block a {
+    text-decoration: none;
+    color: #585859;
+    font-size: 12px;
+    float: right;
+    margin-top:10px;
+  }
+
+.btn-cad {
+    display: block;
+    border: none;
+    background-color: #7626FF ;
+    color: white;
+    border-radius: 25px;
+    margin-top:30px;
+    padding: 15px;
+    box-shadow: 0px 10px 39px #0000007a;
+    height: 60px;    
+    width:30%;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    font-family: 'Mukta', sans-serif;
+    font: 700;
+
+  }
+
+  .form-section p {
+    margin-top:20px;    
+    text-align: center;
+  }
+  .form-section p a {
+    text-decoration: none;
+    color: #0077C5;
+
+  }
+
+ 
+   #fig-rodape{
+     width:100%;
+     margin-top: 150px;
+     display: flex;
+     justify-content: center;
+     animation: flutuar  10s forwards;
+     animation-iteration-count: infinite;
+   }
+
+   @keyframes flutuar{
+     from{
+         transform: translateY(2px);
+     }
+     25%{
+       
+       transform: translateY(5px);
+     }
+     50%{
+              transform: translateY(0px);
+     }
+     70%{
+      
+      transform: translateY(5px);
+     }
+
+     to{
+          transform: translateY(2px);
+     }
+   }
+
+
+
+
+
+
+
+
+/*Adaptação a tela diferentes */
+
+@media screen and (max-width: 1200px) {
+  #fig-rodape {
+    margin-top: 15vh;
+  }
+}
+@media screen and (max-width: 968px){
+  form .cad-box {
+    flex-direction: column;
+}
+form{
+  margin-left: 30%;
+}
+#fig-rodape {
+  margin-top: 1vh;
+}
+
+
+} 
+
+@media screen and (max-width: 768px) {
+  header{
+    padding-left: 20px;
+    padding-bottom: 47px;
+  }
+  #fig-rodape {
+    margin-top: 1vh;
+    margin-left: 5vh;
+  }
+  }
+@media screen and (max-width: 500px) {
+  
+  form{    
+    margin-left: 16%;
+  }
+  form p {
+    margin-left: 22%;
+  }
+  form .btn-login {
+     margin-left: 25%;
+    }
+    header {
+    padding-bottom: -0px;
+  }  
+  #fig-rodape {
+    margin-top: -0vh;
+ }
+}
